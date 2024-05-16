@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 import React, { useState, useEffect } from 'react';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import Link from 'next/link';
@@ -6,7 +5,7 @@ import { links } from '@/lib/data';
 
 interface Link {
   name: string;
-  hash: string; // Assuming hash is a part of each link in `links`
+  hash: string; 
 }
 
 const Navbar: React.FC = () => {

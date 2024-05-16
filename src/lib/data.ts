@@ -1,4 +1,4 @@
-export const links = [
+export const links = [ //Links for the navbar 
     {
       name: "Home",
       hash: "#home",
