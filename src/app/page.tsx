@@ -1,113 +1,128 @@
-import Image from "next/image";
+import React from 'react';
+import { FaPhone, FaClock, FaFacebookF, FaTwitter, FaYoutube, FaCommentDots, FaBars, FaArrowRight } from 'react-icons/fa';
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div id="top">
+      <header className="header">
+        <div className="header-top bg-gray-100 py-2">
+          <div className="container mx-auto flex justify-between items-center">
+            <ul className="header-top-list flex space-x-6">
+              <li className="header-top-item flex items-center space-x-2">
+                <FaPhone aria-hidden="true" />
+                <p className="item-title">Call Us :</p>
+                <a href="tel:01234567895" className="item-link text-blue-500">012 (345) 67 895</a>
+              </li>
+              <li className="header-top-item flex items-center space-x-2">
+                <FaClock aria-hidden="true" />
+                <p className="item-title">Opening Hour :</p>
+                <p className="item-text">Sunday - Friday, 08 am - 09 pm</p>
+              </li>
+            </ul>
+            <ul className="social-list flex space-x-4">
+              <li><a href="#" className="social-link text-blue-500"><FaFacebookF /></a></li>
+              <li><a href="#" className="social-link text-blue-400"><FaTwitter /></a></li>
+              <li><a href="#" className="social-link text-red-500"><FaYoutube /></a></li>
+              <li><a href="#" className="social-link text-green-500"><FaCommentDots /></a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+        <div className="header-bottom bg-white shadow-md py-4">
+          <div className="container mx-auto flex justify-between items-center">
+            <a href="#" className="logo text-2xl font-bold">Barber<span className="text-gray-600">Hair Salon</span></a>
+            <nav className="navbar">
+              <ul className="navbar-list flex space-x-6">
+                <li className="navbar-item"><a href="#home" className="navbar-link text-gray-800 hover:text-blue-500">Home</a></li>
+                <li className="navbar-item"><a href="#services" className="navbar-link text-gray-800 hover:text-blue-500">Services</a></li>
+                <li className="navbar-item"><a href="#pricing" className="navbar-link text-gray-800 hover:text-blue-500">Pricing</a></li>
+                <li className="navbar-item"><a href="#gallery" className="navbar-link text-gray-800 hover:text-blue-500">Gallery</a></li>
+                <li className="navbar-item"><a href="#appointment" className="navbar-link text-gray-800 hover:text-blue-500">Appointment</a></li>
+                <li className="navbar-item"><a href="#" className="navbar-link text-gray-800 hover:text-blue-500">Contact</a></li>
+              </ul>
+            </nav>
+            <button className="nav-toggle-btn text-gray-800" aria-label="toggle menu">
+              <FaBars aria-hidden="true" />
+            </button>
+            <a href="#" className="btn bg-blue-500 text-white px-4 py-2 rounded-md flex items-center">
+              <span>Appointment</span>
+              <FaArrowRight aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </header>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <main>
+        <article>
+          <section id="home" className="section hero bg-cover bg-center" style={{ backgroundImage: "url('./assets/images/hero-banner.jpg')" }}>
+            <div className="container mx-auto text-center py-24">
+              <h1 className="text-4xl font-bold text-white">Barbers & Hair Cutting</h1>
+              <p className="text-lg text-white mt-4">Sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua suspendisse ultrices gravida</p>
+              <a href="#" className="btn bg-blue-500 text-white px-4 py-2 rounded-md mt-6 inline-flex items-center">
+                <span>Explore Our Services</span>
+                <FaArrowRight aria-hidden="true" />
+              </a>
+            </div>
+          </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <section id="services" className="section service py-24">
+            <div className="container mx-auto">
+              <h2 className="text-3xl font-bold text-center">Service We Provide</h2>
+              <p className="text-center text-gray-600 mt-4">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse</p>
+              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <li className="service-card bg-white p-6 rounded-md shadow-md text-center">
+                  <div className="card-icon text-4xl text-blue-500 mb-4"><i className="flaticon-salon"></i></div>
+                  <h3 className="text-2xl font-bold mb-2"><a href="#" className="card-title">Hair Cutting Style</a></h3>
+                  <p className="text-gray-600 mb-4">Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" className="card-btn text-blue-500"><FaArrowRight aria-hidden="true" /></a>
+                </li>
+                {/* Repeat service cards for other services */}
+              </ul>
+            </div>
+          </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <section id="pricing" className="section pricing bg-cover bg-center py-24" style={{ backgroundImage: "url('./assets/images/pricing-bg.jpg')" }}>
+            <div className="container mx-auto text-center">
+              <h2 className="text-3xl font-bold">Awesome Pricing Plan</h2>
+              <p className="text-gray-600 mt-4">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse</p>
+              <div className="pricing-tab-container mt-12">
+                <ul className="tab-filter flex justify-center space-x-6 mb-12">
+                  <li><button className="filter-btn active text-blue-500" data-filter-btn="all"><i className="flaticon-beauty-salon"></i><p>All Pricing</p></button></li>
+                  <li><button className="filter-btn text-gray-800" data-filter-btn="beauty-spa"><i className="flaticon-relax"></i><p>Beauty & Spa</p></button></li>
+                  {/* Repeat filter buttons for other categories */}
+                </ul>
+                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <li data-filter="shaving" className="pricing-card bg-white p-6 rounded-md shadow-md">
+                    <figure className="card-banner mb-4"><img src="./assets/images/pricing-1.jpg" alt="Hair Cutting & Fitting" className="w-24 h-24 rounded-full mx-auto" /></figure>
+                    <div className="wrapper text-center">
+                      <h3 className="text-2xl font-bold mb-2">Hair Cutting & Fitting</h3>
+                      <p className="text-gray-600 mb-4">Clean & simple 30-40 minutes</p>s
+                      <data className="card-price text-xl font-bold" value="89">$89</data>
+                    </div>
+                  </li>
+                  {/* Repeat pricing cards for other services */}
+                </ul>
+              </div>
+            </div>
+          </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <section id="gallery" className="section gallery py-24">
+            <div className="container mx-auto">
+              <div className="title-wrapper flex justify-between items-center mb-12">
+                <div>
+                  <h2 className="text-3xl font-bold">Latest Photo Gallery</h2>
+                  <p className="text-gray-600 mt-4">Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse</p>
+                </div>
+                <a href="#" className="btn bg-blue-500 text-white px-4 py-2 rounded-md inline-flex items-center">
+                  <span>Explore More Gallery</span>
+                  <FaArrowRight aria-hidden="true" />
+                </a>
+              </div>
+              {/* Add your gallery content here */}
+            </div>
+          </section>
+        </article>
+      </main>
+    </div>
   );
 }
