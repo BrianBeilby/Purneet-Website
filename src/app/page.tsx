@@ -6,28 +6,6 @@ export default function Home() {
   return (
     <div id="top">
       <header className="header">
-        <div className="header-top bg-gray-100 py-2">
-          <div className="container mx-auto flex justify-between items-center">
-            <ul className="header-top-list flex space-x-6">
-              <li className="header-top-item flex items-center space-x-2">
-                <FaPhone aria-hidden="true" />
-                <p className="item-title">Call Us :</p>
-                <a href="tel:01234567895" className="item-link text-blue-500">012 (345) 67 895</a>
-              </li>
-              <li className="header-top-item flex items-center space-x-2">
-                <FaClock aria-hidden="true" />
-                <p className="item-title">Opening Hour :</p>
-                <p className="item-text">Sunday - Friday, 08 am - 09 pm</p>
-              </li>
-            </ul>
-            <ul className="social-list flex space-x-4">
-              <li><a href="#" className="social-link text-blue-500"><FaFacebookF /></a></li>
-              <li><a href="#" className="social-link text-blue-400"><FaTwitter /></a></li>
-              <li><a href="#" className="social-link text-red-500"><FaYoutube /></a></li>
-              <li><a href="#" className="social-link text-green-500"><FaCommentDots /></a></li>
-            </ul>
-          </div>
-        </div>
         <div className="header-bottom bg-white shadow-md py-4">
           <div className="container mx-auto flex justify-between items-center">
             <a href="#" className="logo text-2xl font-bold">Barber<span className="text-gray-600">Hair Salon</span></a>
@@ -41,10 +19,7 @@ export default function Home() {
                 <li className="navbar-item"><a href="#" className="navbar-link text-gray-800 hover:text-blue-500">Contact</a></li>
               </ul>
             </nav>
-            <button className="nav-toggle-btn text-gray-800" aria-label="toggle menu">
-              <FaBars aria-hidden="true" />
-            </button>
-            <a href="#" className="btn bg-blue-500 text-white px-4 py-2 rounded-md flex items-center">
+            <a href="#" className="btn bg-blue-500 text-white px-4 py-2 rounded-md flex items-center hover:bg-blue-600">
               <span>Appointment</span>
               <FaArrowRight aria-hidden="true" />
             </a>
