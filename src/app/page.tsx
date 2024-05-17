@@ -40,9 +40,20 @@ export default function Home() {
               Please stop what you&apos;re doing right now and watch this
               podcast!
             </div>
-            <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-              Learn More
-            </button>
+            <div className="flex space-x-8">
+              <a title="Spotify" href="#" className="text-5xl text-spotify-green hover:text-green-700">
+                <FaSpotify />
+              </a>
+              <a title="Youtube" href="#" className="text-5xl text-youtube-red hover:text-red-800">
+                <FaYoutube />
+              </a>
+              <a title="Itunes" href="#" className="text-5xl text-purple-300 hover:text-purple-400">
+                <SiItunes />
+              </a>
+              <a title="Itunes" href="#" className="text-5xl text-purple-600 hover:text-purple-700">
+                <PiApplePodcastsLogoLight />
+              </a>
+            </div>
           </motion.div>
         </AuroraBackground>
         <div className="bg-white py-16">

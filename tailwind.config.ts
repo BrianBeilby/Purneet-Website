@@ -30,6 +30,10 @@ const config: Config = {
           },
         },
       },
+      colors: {
+        "spotify-green": "#1DB954",
+        "youtube-red": "#FF0000"
+      },
     },
   },
   plugins: [addVariablesForColors],
