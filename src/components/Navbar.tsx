@@ -4,6 +4,8 @@ import Link from "next/link";
 import { links } from "@/lib/data";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import Logo from "../../public/Final_Logo.png";
+import Image from "next/image";
 
 interface Link {
   name: string;
@@ -41,7 +43,11 @@ const Navbar: React.FC = () => {
           }
         )}
         initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: scrolling ? 0 : -100, x: "-50%", opacity: scrolling ? 1 : 0 }}
+        animate={{
+          y: scrolling ? 0 : -100,
+          x: "-50%",
+          opacity: scrolling ? 1 : 0,
+        }}
         transition={{ type: "spring", stiffness: 380, damping: 30 }}
       ></motion.div>
 
@@ -49,12 +55,26 @@ const Navbar: React.FC = () => {
         className={clsx(
           "fixed left-1/2 transform -translate-x-1/2 w-full max-w-[90rem] px-4 flex items-center justify-between py-2 sm:py-0 transition-all duration-300",
           {
-            "top-7": scrolling,
+            "top-3": scrolling,
             "top-[0.15rem] sm:top-[1.7rem]": !scrolling,
           }
         )}
       >
-        <div className="text-xl font-bold text-black dark:text-white">Logo</div>
+        <div
+          className={`text-xl font-bold ${
+            scrolling ? "text-black" : "text-white"
+          }`}
+        >
+          <Image
+            src={Logo}
+            alt="Podcast Logo"
+            width="192"
+            height="192"
+            quality="95"
+            priority={true}
+            className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl"
+          />
+        </div>
         <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <motion.li
