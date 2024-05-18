@@ -32,48 +32,32 @@ const Navbar: React.FC = () => {
       }`}
       style={{ top: 0, zIndex: 1000, width: '100%' }}
     >
-      <div className="container mx-auto flex justify-between items-center px-4">
-        <div className={`text-xl font-bold ${scrolling ? 'text-black' : 'text-white'}`}>Logo</div>
-        <div className="space-x-4">
-          <a href="#home" className={`hover:text-gray-700 ${scrolling ? 'text-black' : 'text-white'} `}   
-          onClick={() => {
-                    setActiveSection("Home");
-                    setTimeOfLastClick(Date.now());
-                  }}>Home</a>
-          <a href="#about" className={`hover:text-gray-700 ${scrolling ? 'text-black' : 'text-white'}`} 
+  <div className="container mx-auto flex justify-between items-center px-4">
+  <div className={`text-xl font-bold ${scrolling ? 'text-black' : 'text-white'}`}>Logo</div>
+  <div className="space-x-4">
+    <a 
+      href="#home" 
+      className={`${activeSection === "Home" ? 'bg-orange-500 px-2 py-2 transition rounded-full  text-black' : ''} ${scrolling ? 'text-black' : 'text-white hover:text-gray-700'}`}   
+      onClick={() => {
+        setActiveSection("Home");
+        setTimeOfLastClick(Date.now());
+      }}
+    >
+      Home
+    </a>
+          <a href="#about" 
+          className={`${activeSection === "About" ? 'bg-orange-500 px-2 py-2 transition rounded-full  text-black' : ''} ${scrolling ? 'text-black' : 'text-white hover:text-gray-700'}`}   
           onClick={() => {
                     setActiveSection("About");
                     setTimeOfLastClick(Date.now());
                   }}>About</a>
-          <a href="#contact" className={`hover:text-gray-700 ${scrolling ? 'text-black' : 'text-white'}`}
-          onClick={() => {
+          <a href="#contact" 
+        className={`${activeSection === "Contact" ? 'bg-orange-500 px-2 py-2 transition rounded-full  text-black' : ''} ${scrolling ? 'text-black' : 'text-white hover:text-gray-700'}`}   
+        onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}>Contact</a>
         </div>
-        <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-          <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
-            {links.map((link) => (
-              <li className="h-3/4 flex items-center justify-center relative" key={link.hash}>
-                <Link
-                  href={link.hash}
-                  className={`flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300 ${
-                    activeSection === link.name ? 'text-gray-950 dark:text-gray-200' : ''
-                  }`}
-                  onClick={() => {
-                    setActiveSection(link.name);
-                    setTimeOfLastClick(Date.now());
-                  }}
-                >
-                  {link.name}
-                  {link.name === activeSection && (
-                    <span className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"></span>
-                  )}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </div>
     </nav>
   );
