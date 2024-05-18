@@ -50,7 +50,7 @@ export default function Home() {
               <a title="Itunes" href="#" className="text-5xl text-purple-300 hover:text-purple-400">
                 <SiItunes />
               </a>
-              <a title="Itunes" href="#" className="text-5xl text-purple-600 hover:text-purple-700">
+              <a title="Apple Podcasts" href="#" className="text-5xl text-purple-600 hover:text-purple-700">
                 <PiApplePodcastsLogoLight />
               </a>
             </div>
