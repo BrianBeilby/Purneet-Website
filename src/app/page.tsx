@@ -22,7 +22,8 @@ export default function Home() {
     <div id="top">
       <div>
         <Navbar />
-        <AuroraBackground>
+        <div className="min-h-screen bg-gradient-to-r from-orange-400 to-orange-500 flex items-center justify-center">
+
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +56,7 @@ export default function Home() {
               </a>
             </div>
           </motion.div>
-        </AuroraBackground>
+        </div>
         <div className="bg-white py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-black">
