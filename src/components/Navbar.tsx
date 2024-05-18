@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useActiveSectionContext } from '@/context/active-section-context';
-import Link from 'next/link';
 import { links } from '@/lib/data';
+import Logo from "../../public/Final_Logo.png";
+import Image from "next/image";
 
 interface Link {
   name: string;
@@ -33,7 +34,17 @@ const Navbar: React.FC = () => {
       style={{ top: 0, zIndex: 1000, width: '100%' }}
     >
   <div className="container mx-auto flex justify-between items-center px-4">
-    <div className={`text-xl font-bold ${scrolling ? 'text-black' : 'text-white'}`}>Logo</div>
+    <div className={`text-xl font-bold ${scrolling ? 'text-black' : 'text-white'}`}>
+        <Image
+            src={Logo}
+            alt="Podcast Logo"
+            width="192"
+            height="192"
+            quality="95"
+            priority={true}
+            className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl"
+          />
+    </div>
       <div className="space-x-4">
         {links.map((section) => (
               <a 
