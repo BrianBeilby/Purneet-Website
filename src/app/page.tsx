@@ -22,7 +22,8 @@ export default function Home() {
     <div id="top">
       <div>
         <Navbar />
-        <div className="min-h-screen bg-gradient-to-r from-orange-400 to-purple-800 flex items-center justify-center">
+        <div className="min-h-screen bg-gradient-to-r from-orange-400 to-orange-500 flex items-center justify-center">
+
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
