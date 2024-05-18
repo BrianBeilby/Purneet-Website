@@ -33,30 +33,21 @@ const Navbar: React.FC = () => {
       style={{ top: 0, zIndex: 1000, width: '100%' }}
     >
   <div className="container mx-auto flex justify-between items-center px-4">
-  <div className={`text-xl font-bold ${scrolling ? 'text-black' : 'text-white'}`}>Logo</div>
-  <div className="space-x-4">
-    <a 
-      href="#home" 
-      className={`${activeSection === "Home" ? 'bg-orange-500 px-2 py-2 transition rounded-full  text-black' : ''} ${scrolling ? 'text-black' : 'text-white hover:text-gray-700'}`}   
-      onClick={() => {
-        setActiveSection("Home");
-        setTimeOfLastClick(Date.now());
-      }}
-    >
-      Home
-    </a>
-          <a href="#about" 
-          className={`${activeSection === "About" ? 'bg-orange-500 px-2 py-2 transition rounded-full  text-black' : ''} ${scrolling ? 'text-black' : 'text-white hover:text-gray-700'}`}   
-          onClick={() => {
-                    setActiveSection("About");
-                    setTimeOfLastClick(Date.now());
-                  }}>About</a>
-          <a href="#contact" 
-        className={`${activeSection === "Contact" ? 'bg-orange-500 px-2 py-2 transition rounded-full  text-black' : ''} ${scrolling ? 'text-black' : 'text-white hover:text-gray-700'}`}   
-        onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}>Contact</a>
+    <div className={`text-xl font-bold ${scrolling ? 'text-black' : 'text-white'}`}>Logo</div>
+      <div className="space-x-4">
+        {links.map((section) => (
+              <a 
+                key={section.name} 
+                href={section.hash} 
+                className={`${activeSection === section.name ? 'bg-orange-500 px-2 py-2 transition rounded-full text-black' : ''} ${scrolling ? 'text-black' : 'text-white hover:text-gray-700'}`}   
+                onClick={() => {
+                  setActiveSection(section.name);
+                  setTimeOfLastClick(Date.now());
+                }}
+              >
+                {section.name}
+              </a>
+            ))}
         </div>
       </div>
     </nav>
