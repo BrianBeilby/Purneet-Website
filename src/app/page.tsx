@@ -18,6 +18,9 @@ import { AuroraBackground } from "@/components/AuroraBackground";
 import { motion } from "framer-motion";
 import Front_Home from "@/components/Home";
 import Podcast_Episodes from "@/components/Podcast_Episodes";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -26,9 +29,9 @@ export default function Home() {
         <Navbar />
         <Front_Home />
         <Podcast_Episodes/>
-
-
-
+        <About />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

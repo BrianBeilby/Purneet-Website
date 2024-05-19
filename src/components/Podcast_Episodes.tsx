@@ -1,4 +1,5 @@
 import React from 'react'
+import SectionDivider from './section-divider'
 
 function Podcast_Episodes() {
   return (
@@ -47,6 +48,7 @@ function Podcast_Episodes() {
             {/* Add more episodes here */}
         </div>
         </div>
+        <SectionDivider />
     </div>
   )
 }

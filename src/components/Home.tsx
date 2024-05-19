@@ -1,3 +1,4 @@
+import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
 import React from 'react'
 import { FaSpotify, FaYoutube } from 'react-icons/fa'
@@ -5,8 +6,12 @@ import { PiApplePodcastsLogoLight } from 'react-icons/pi'
 import { SiItunes } from 'react-icons/si'
 
 function Front_Home() {
+    const { ref } = useSectionInView("Home", 0.5);
+    
   return (
-    <div className="min-h-screen bg-gradient-to-r from-orange-400 to-orange-500 flex items-center justify-center">
+    <section
+        ref={ref}
+        id="home"  className="min-h-screen bg-gradient-to-r from-orange-400 to-orange-500 flex items-center justify-center">
 
     <motion.div
       initial={{ opacity: 0.0, y: 40 }}
@@ -40,7 +45,7 @@ function Front_Home() {
         </a>
       </div>
     </motion.div>
-  </div>
+  </section>
   )
 }
 

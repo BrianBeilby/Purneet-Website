@@ -61,19 +61,19 @@ const Navbar: React.FC = () => {
         )}
       >
         <div
-          className={`text-xl font-bold ${
+          className={`text-xl font-bold hover:scale-110 active:scale-105 transition cursor-pointer${
             scrolling ? "text-black" : "text-white"
           }`}
         >
-          <Image
-            src={Logo}
-            alt="Podcast Logo"
-            width="192"
-            height="192"
-            quality="95"
-            priority={true}
-            className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl"
-          />
+            <Image
+              src={Logo}
+              alt="Podcast Logo"
+              width="192"
+              height="192"
+              quality="95"
+              priority={true}
+              className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl"
+            />
         </div>
         <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
