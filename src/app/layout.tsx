@@ -20,8 +20,8 @@ export default function RootLayout({
       
       <ActiveSectionContextProvider>
         <body className={inter.className}>
-          <div className="bg-black absolute top-[6rem] right-[1rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
-          <div className="bg-black absolute top-[6rem]  left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "></div>
+          <div className="bg-black absolute top-[11rem] right-[1rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
+          <div className="bg-black absolute top-[11rem]  left-[-30rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "></div>
 
           {children}</body>
       </ActiveSectionContextProvider>
