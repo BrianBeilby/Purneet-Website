@@ -4,6 +4,10 @@ export const links = [ //Links for the navbar
       hash: "#home",
     },
     {
+      name: "Podcasts",
+      hash: "#podcasts",
+    },
+    {
       name: "About",
       hash: "#about",
     },
