@@ -12,7 +12,7 @@ function Front_Home() {
       initial={{ opacity: 0.0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
-        delay: 0.3,
+        delay: 0.1,
         duration: 0.8,
         ease: "easeInOut",
       }}
@@ -26,16 +26,16 @@ function Front_Home() {
         podcast!
       </div>
       <div className="flex space-x-8">
-        <a title="Spotify" href="#" className="text-5xl text-spotify-green hover:text-green-700">
+        <a title="Spotify" href="#" className="text-5xl text-spotify-green hover:text-green-700 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <FaSpotify />
         </a>
-        <a title="Youtube" href="#" className="text-5xl text-youtube-red hover:text-red-800">
+        <a title="Youtube" href="#" className="text-5xl text-youtube-red hover:text-red-800 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <FaYoutube />
         </a>
-        <a title="Itunes" href="#" className="text-5xl text-purple-300 hover:text-purple-400">
+        <a title="Itunes" href="#" className="text-5xl text-purple-300 hover:text-purple-400 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <SiItunes />
         </a>
-        <a title="Apple Podcasts" href="#" className="text-5xl text-purple-600 hover:text-purple-700">
+        <a title="Apple Podcasts" href="#" className="text-5xl text-purple-600 hover:text-purple-700 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <PiApplePodcastsLogoLight />
         </a>
       </div>
