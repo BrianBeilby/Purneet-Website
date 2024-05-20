@@ -56,16 +56,14 @@ export default function Contact() {
         animate="animate"
         style={{ cursor: "pointer", display: "flex", justifyContent: "center" }}
       >
-        <div className="mt-6 flex justify-center mb-6 w-14 h-14 text-3xl cursor-pointer z-10 text-black dark:text-white">
+        <div className="mt-6 flex justify-center mb-6 w-14 h-14 text-3xl cursor-pointer z-10 text-orange-400 ">
           <FaArrowCircleDown />
         </div>
       </motion.div>
 
-      <form
-        className="mt-10 flex flex-col dark:text-black w-full max-w-lg"
-      >
+      <form className="mt-10 flex flex-col dark:text-black w-full max-w-lg">
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 rounded-lg border-2 border-orange-400 bg-white bg-opacity-80 focus:bg-opacity-100 hover:bg-white focus:border-4 focus:border-orange-400 transition-all"
           name="senderEmail"
           type="email"
           required
@@ -73,7 +71,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg border-2 border-orange-400 p-4 bg-white bg-opacity-80 focus:bg-opacity-100 hover:bg-white focus:border-4 focus:border-orange-400 transition-all"
           name="message"
           placeholder="Your message"
           required
@@ -81,6 +79,9 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
+
+
+
     </motion.section>
   );
 }
