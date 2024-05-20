@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
     <header className="z-[999] relative">
       <motion.div
         className={clsx(
-          "fixed right-10 transform h-[4.5rem] min-w-[21rem] max-w-[90rem] w-auto rounded-none bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full dark:bg-opacity-75",
+          "fixed right-12 transform h-[4.5rem] min-w-[21rem] max-w-[90rem] w-auto rounded-none bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full dark:bg-opacity-75",
           {
             "bg-transparent": !scrolling,
             "bg-orange-100": scrolling,
@@ -65,6 +65,7 @@ const Navbar: React.FC = () => {
             scrolling ? "text-black" : "text-white"
           }`}
         >
+          <a href="#">
             <Image
               src={Logo}
               alt="Podcast Logo"
@@ -74,6 +75,7 @@ const Navbar: React.FC = () => {
               priority={true}
               className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl"
             />
+          </a>
         </div>
         <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
