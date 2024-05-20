@@ -45,7 +45,7 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80" style={{ textAlign: "center" }}>
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:dimeyeshow@gmail.com">
+        <a className="text-orange-500 font-bold" href="mailto:dimeyeshow@gmail.com">
           dimeyeshow@gmail.com
         </a>{" "} <br></br>
         or through this form.
