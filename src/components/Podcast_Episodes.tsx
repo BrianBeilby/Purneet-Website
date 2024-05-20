@@ -13,7 +13,7 @@ function PodcastEpisodes() {
           Podcast Episodes
         </h2>
         {episodes.length === 0 ? (
-          <p className="text-orange-800 text-lg">Episodes coming soon... Stay tuned😎</p>
+          <p className="text-orange-800 text-lg">Episodes coming soon... Stay tuned! 😎</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {episodes.map((episode) => (
