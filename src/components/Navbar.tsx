@@ -79,6 +79,7 @@ const Navbar: React.FC = () => {
         </div>
         <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
+            link.name !== "Home" && (
             <motion.li
               className="h-3/4 flex items-center justify-center relative"
               key={link.hash}
@@ -112,6 +113,7 @@ const Navbar: React.FC = () => {
                 )}
               </Link>
             </motion.li>
+            )
           ))}
         </ul>
       </nav>
