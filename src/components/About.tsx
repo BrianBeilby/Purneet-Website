@@ -8,7 +8,7 @@ function About() {
         <section
             ref={ref}
             id='about'
-            className='mt-28 mx-auto max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 min-h-screen flex flex-col justify-center items-center'
+            className='mt-28 mx-auto max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-5 min-h-screen flex flex-col justify-center items-center'
         >
             <h2 className="text-3xl font-medium capitalize mb-8">
                 About me
