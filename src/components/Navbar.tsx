@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import Link from "next/link";
 import { links } from "@/lib/data";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import clsx from "clsx";
 import Logo from "../../public/Final_Logo.png";
 import Image from "next/image";
@@ -11,6 +11,20 @@ interface Link {
   name: string;
   hash: string;
 }
+
+const logoVariants: Variants = {
+  initial: {
+    rotate: 0, // Initial state at 0 degrees
+  },
+  hover: {
+    rotate: [0, 360], // Define the keyframes for rotation
+    transition: {
+      duration: 10, // Duration for a full rotation
+      ease: "linear", // Smooth continuous rotation
+      repeat: Infinity, // Repeat indefinitely while hovering
+    },
+  },
+};
 
 const Navbar: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -60,10 +74,10 @@ const Navbar: React.FC = () => {
           }
         )}
       >
-        <div
-          className={`text-xl font-bold hover:scale-110 active:scale-105 transition cursor-pointer${
-            scrolling ? "text-black" : "text-white"
-          }`}
+        <motion.div
+          initial="initial"
+          whileHover="hover"
+          variants={logoVariants}
         >
           <a href="#">
             <Image
@@ -73,10 +87,10 @@ const Navbar: React.FC = () => {
               height="192"
               quality="95"
               priority={true}
-              className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl"
+              className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl hover:scale-110 active:scale-105 transition cursor-pointer" 
             />
           </a>
-        </div>
+        </motion.div>
         <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             link.name !== "Home" && (
