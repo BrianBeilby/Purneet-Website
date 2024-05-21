@@ -14,14 +14,14 @@ interface Link {
 
 const logoVariants: Variants = {
   initial: {
-    rotate: 0, // Initial state at 0 degrees
+    rotate: 0, 
   },
   hover: {
-    rotate: [0, 360], // Define the keyframes for rotation
+    rotate: [0, 360], 
     transition: {
-      duration: 10, // Duration for a full rotation
-      ease: "linear", // Smooth continuous rotation
-      repeat: Infinity, // Repeat indefinitely while hovering
+      duration: 3, 
+      ease: "linear", 
+      repeat: Infinity, 
     },
   },
 };
