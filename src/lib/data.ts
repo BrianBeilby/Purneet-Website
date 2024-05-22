@@ -21,10 +21,11 @@ export const links = [ //Links for the navbar
     id: number;
     title: string;
     description: string;
+    link: string;
   };
   
   export const episodes: Episode[] = [
-
+    { id: 1, title: 'Episode 1 Derek Lam', description: 'The First Episode starring Derek Lam, a professor at California State University, Sacramento.', link: 'https://www.youtube.com/watch?v=qhhSx8RoAiQ'},
   ];
 
   /*

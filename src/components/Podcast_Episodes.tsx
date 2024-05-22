@@ -15,16 +15,20 @@ function PodcastEpisodes() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-black">
           Podcast Episodes
+          <h3 className='text-lg mt-2 mb-8 text-black'>And many more to come... Stay tuned! 😎</h3>
+
         </h2>
         {episodes.length === 0 ? (
           <p className="text-orange-800 text-lg">Episodes coming soon... Stay tuned! 😎</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {episodes.map((episode) => (
-              <div key={episode.id} className="bg-gray-900 p-4 rounded">
-                <h3 className="text-xl font-bold">{episode.title}</h3>
-                <p>{episode.description}</p>
-              </div>
+              <a href={episode.link} target="_blank">
+                <div key={episode.id} className="bg-gray-900 p-4 rounded  focus:scale-110 hover:scale-110 transition cursor-pointer hover:bg-orange-500 hover:text-black">
+                  <h3 className="text-xl font-bold text-orange-400 ">{episode.title}</h3>
+                  <p>{episode.description}</p>
+                </div>
+              </a>
             ))}
           </div>
         )}
