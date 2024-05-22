@@ -7,6 +7,8 @@ import { useSectionInView } from "@/lib/hooks";
 import SubmitBtn from "./submit-btn";
 //import toast from "react-hot-toast";
 import { FaArrowCircleDown } from "react-icons/fa";
+import toast from "react-hot-toast";
+import { sendEmail } from "@/actions/sendEmail";
 
 const arrowVariants: Variants = {
   animate: {
@@ -45,7 +47,7 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80" style={{ textAlign: "center" }}>
         Please contact me directly at{" "}
-        <a className="text-orange-500 font-bold" href="mailto:dimeyeshow@gmail.com">
+        <a className="text-orange-500 font-bold underline" href="mailto:dimeyeshow@gmail.com">
           dimeyeshow@gmail.com
         </a>{" "} <br></br>
         or through this form.
@@ -61,7 +63,17 @@ export default function Contact() {
         </div>
       </motion.div>
 
-      <form className="mt-10 flex flex-col dark:text-black w-full max-w-lg">
+      <form className="mt-10 flex flex-col dark:text-black w-full max-w-lg"
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
+        }}>
         <input
           className="h-14 px-4 rounded-lg border-2 border-orange-400 bg-white bg-opacity-80 focus:bg-opacity-100 hover:bg-white focus:border-4 focus:border-orange-400 transition-all"
           name="senderEmail"
