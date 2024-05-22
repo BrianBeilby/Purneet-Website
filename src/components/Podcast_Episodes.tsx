@@ -23,9 +23,9 @@ function PodcastEpisodes() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {episodes.map((episode) => (
-              <a href={episode.link} target="_blank">
-                <div key={episode.id} className="bg-gray-900 p-4 rounded  focus:scale-110 hover:scale-110 transition cursor-pointer hover:bg-orange-500 hover:text-black">
-                  <h3 className="text-xl font-bold text-orange-400 ">{episode.title}</h3>
+              <a key={episode.id} href={episode.link} target="_blank" rel="noopener noreferrer">
+                <div className="bg-gray-900 p-4 rounded focus:scale-110 hover:scale-110 transition cursor-pointer hover:bg-orange-500 hover:text-black">
+                  <h3 className="text-xl font-bold text-orange-400">{episode.title}</h3>
                   <p>{episode.description}</p>
                 </div>
               </a>
