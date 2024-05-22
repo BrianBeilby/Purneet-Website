@@ -1,14 +1,18 @@
 import { useSectionInView } from '@/lib/hooks';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 function About() {
     const { ref } = useSectionInView("About", 0.5);
 
     return (
-        <section
+        <motion.section
             ref={ref}
             id='about'
             className='mt-28 mx-auto max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-5 min-h-screen flex flex-col justify-center items-center'
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.175 }}
         >
             <h2 className="text-3xl font-medium capitalize mb-8">
                 About me
@@ -34,7 +38,7 @@ function About() {
                 <span className="font-medium"> Integer fringilla congue eros non fermentum. </span>. Sed dapibus pulvinar{" "}
                 <span className="font-medium">pulvinar nibh tempor</span>. porta.
             </p>
-        </section>
+        </motion.section>
     );
 }
 

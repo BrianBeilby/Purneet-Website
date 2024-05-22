@@ -42,7 +42,7 @@ function Front_Home() {
         <a title="Instagram" href="https://www.instagram.com/dimeyeshow/" target="_blank" className="text-5xl text-pink-500 hover:text-pink-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <FaInstagram />
         </a>
-        <a title="Twitch" href="https://www.twitch.tv/dimeyeshow" target="_blank" className="text-5xl text-purple-500 hover:text-purple-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
+        <a title="Twitch" href="https://www.twitch.tv/dimeyeshow'" target="_blank" className="text-5xl text-purple-500 hover:text-purple-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <FaTwitch />
         </a>
       </div>
