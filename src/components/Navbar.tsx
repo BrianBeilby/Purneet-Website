@@ -46,24 +46,6 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="z-[999] relative">
-      <motion.div
-        className={clsx(
-          "fixed right-12 transform h-[4.5rem] min-w-[21rem] max-w-[90rem] w-auto rounded-none bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:rounded-full dark:bg-opacity-75",
-          {
-            "bg-transparent": !scrolling,
-            "bg-orange-100": scrolling,
-            "top-0": scrolling,
-            "top-[-100px]": !scrolling,
-          }
-        )}
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{
-          y: scrolling ? 0 : -100,
-          x: "-50%",
-          opacity: scrolling ? 1 : 0,
-        }}
-        transition={{ type: "spring", stiffness: 380, damping: 30 }}
-      ></motion.div>
 
       <nav
         className={clsx(
@@ -91,46 +73,51 @@ const Navbar: React.FC = () => {
             />
           </a>
         </motion.div>
-        <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
-          {links.map((link) => (
-            link.name !== "Home" && (
-            <motion.li
-              className="h-3/4 flex items-center justify-center relative"
-              key={link.hash}
-              initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-            >
-              <Link
-                className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-700 transition text-black",
-                  {
-                    "text-black": activeSection === link.name,
-                  }
-                )}
-                href={link.hash}
-                onClick={() => {
-                  setActiveSection(link.name);
-                  setTimeOfLastClick(Date.now());
-                }}
+        <motion.div className="relative bg-white px-4 py-1 bg-opacity-50 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] rounded-full"
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}>
+          <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
+            {links.map((link) => (
+              link.name !== "Home" && (
+              <motion.li
+                className="h-3/4 flex items-center justify-center relative"
+                key={link.hash}
+                initial={{ y: -100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
               >
-                {link.name}
-                {link.name === activeSection && (
-                  <motion.span
-                    className="bg-gray-100 rounded-full absolute top-2 h-2/3 inset-0 -z-10 dark:bg-orange-400"
-                    layoutId="activeSection"
-                    transition={{
-                      type: "spring",
-                      stiffness: 380,
-                      damping: 30,
-                    }}
-                  ></motion.span>
-                )}
-              </Link>
-            </motion.li>
-            )
-          ))}
-        </ul>
+                <Link
+                  className={clsx(
+                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-700 transition text-black",
+                    {
+                      "text-black": activeSection === link.name,
+                    }
+                  )}
+                  href={link.hash}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
+                  }}
+                >
+                  {link.name}
+                  {link.name === activeSection && (
+                    <motion.span
+                      className="bg-gray-100 rounded-full absolute top-2 h-2/3 inset-0 -z-10 dark:bg-orange-400"
+                      layoutId="activeSection"
+                      transition={{
+                        type: "spring",
+                        stiffness: 380,
+                        damping: 30,
+                      }}
+                    ></motion.span>
+                  )}
+                </Link>
+              </motion.li>
+              )
+            ))}
+          </ul>
+        </motion.div>
       </nav>
+
     </header>
   );
 };
