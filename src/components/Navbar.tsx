@@ -61,7 +61,10 @@ const Navbar: React.FC = () => {
           whileHover="hover"
           variants={logoVariants}
         >
-          <a href="#">
+          <motion.a href="#" 
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            >
             <Image
               src={Logo}
               alt="Podcast Logo"
@@ -71,9 +74,9 @@ const Navbar: React.FC = () => {
               priority={true}
               className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl hover:scale-110 active:scale-105 transition cursor-pointer" 
             />
-          </a>
+          </motion.a>
         </motion.div>
-        <motion.div className="relative bg-white px-4 py-1 bg-opacity-50 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] rounded-full"
+        <motion.div className="relative bg-white px-4 py-1 bg-opacity-50 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full"
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
           <ul className="flex flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
@@ -84,6 +87,11 @@ const Navbar: React.FC = () => {
                 key={link.hash}
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 380,
+                  damping: 30,
+                }}
               >
                 <Link
                   className={clsx(
