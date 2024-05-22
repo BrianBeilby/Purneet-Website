@@ -3,9 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-//import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
-//import toast from "react-hot-toast";
 import { FaArrowCircleDown } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import { sendEmail } from "@/actions/sendEmail";
