@@ -1,9 +1,8 @@
 import { useSectionInView } from '@/lib/hooks'
 import { motion } from 'framer-motion'
 import React from 'react'
-import { FaSpotify, FaYoutube } from 'react-icons/fa'
-import { PiApplePodcastsLogoLight } from 'react-icons/pi'
-import { SiItunes } from 'react-icons/si'
+import { FaSpotify, FaYoutube, FaTiktok, FaInstagram, FaTwitch } from 'react-icons/fa'
+
 
 function Front_Home() {
     const { ref } = useSectionInView("Home", 0.5);
@@ -31,17 +30,20 @@ function Front_Home() {
         podcast!
       </div>
       <div className="flex space-x-8">
-        <a title="Spotify" href="#" className="text-5xl text-spotify-green hover:text-green-700 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
+        <a title="Spotify" href="https://open.spotify.com/show/1sW6Gok1Dj4gpkO5S3ozI5" target="_blank" className="text-5xl text-spotify-green hover:text-green-700 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <FaSpotify />
         </a>
-        <a title="Youtube" href="#" className="text-5xl text-youtube-red hover:text-red-800 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
+        <a title="Youtube" href="https://www.youtube.com/channel/UCJfTG1THOabQ6OXQgzV2hdg" target="_blank" className="text-5xl text-youtube-red hover:text-red-800 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
           <FaYoutube />
         </a>
-        <a title="Itunes" href="#" className="text-5xl text-purple-300 hover:text-purple-400 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
-          <SiItunes />
+        <a title="Tiktok" href="https://www.tiktok.com/@dimeyeshow?lang=en" target="_blank" className="text-5xl text-grey-100 hover:text-grey-200 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
+          <FaTiktok />
         </a>
-        <a title="Apple Podcasts" href="#" className="text-5xl text-purple-600 hover:text-purple-700 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
-          <PiApplePodcastsLogoLight />
+        <a title="Instagram" href="https://www.instagram.com/dimeyeshow/" target="_blank" className="text-5xl text-pink-500 hover:text-pink-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
+          <FaInstagram />
+        </a>
+        <a title="Twitch" href="https://www.twitch.tv/dimeyeshow" target="_blank" className="text-5xl text-purple-500 hover:text-purple-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer">
+          <FaTwitch />
         </a>
       </div>
     </motion.div>
