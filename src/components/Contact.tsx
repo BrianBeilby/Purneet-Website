@@ -46,7 +46,13 @@ export default function Contact() {
       >
         <h2 className="text-3xl font-medium capitalize mb-8 text-center">Contact me</h2>
 
-        <p className="text-gray-700 -mt-6 dark:text-white/80" style={{ textAlign: "center" }}>
+        <p className="mb-3">
+        Before each podcast episode airs,we invite viewers on platforms like Instagram to participate in our "Viewer Questions" segment.{" "}
+                <span className="font-medium"> We've received fantastic questions for our first podcast, </span>, 
+                and we look forward to continuing to engage with your brilliant minds and contributions in our future discussions.{" "}
+            </p>
+
+        <p className="text-gray-700 mt-6 dark:text-white/80" style={{ textAlign: "center" }}>
           Please contact me directly at{" "}
           <a className="text-orange-500 font-bold underline" href="mailto:dimeyeshow@gmail.com">
             dimeyeshow@gmail.com
