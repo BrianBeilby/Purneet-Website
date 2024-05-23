@@ -13,11 +13,10 @@ function PodcastEpisodes() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.125 }}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-black">
+          <h2 className="text-3xl font-bold mb-8 text-black">
           Podcast Episodes
-          <h3 className='text-lg mt-2 mb-8 text-black'>And many more to come... Stay tuned! 😎</h3>
-
-        </h2>
+          </h2>
+          <h3 className='text-lg mt-2 mb-8 text-black'>And many more to come... Stay tuned!</h3>
         {episodes.length === 0 ? (
           <p className="text-orange-800 text-lg">Episodes coming soon... Stay tuned! 😎</p>
         ) : (

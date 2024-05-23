@@ -18,29 +18,29 @@ function About() {
                 About me
             </h2>
             <p className="mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. {" "}
-                <span className="font-medium">Lorem </span>, 
-                  ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque 
-                  enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.{" "}
+            Welcome to the Dim Eye Show, a platform created by curious people for curious people. {" "}
+                <span className="font-medium"> We dedicate ourselves to the expansion of knowledge,  </span>, 
+                wisdom, and truth for ourselves and others. Our plan is to provide a range of content,{" "}
                 <span className="font-medium">
-                  Fusce luctus vestibulum augue ut aliquet
+                from podcasts with experts to quick street interviews, 
                 </span>
-                    .Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
-                  Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper 
-                  ipsum dignissim ac.{" "}
-                <span className="font-medium">software engineering or web developer role</span>.
+                to videos of us just talking. We enjoy thinking and discussing topics such as science & innovation, religion, history, spirituality, belief, the 
+                inner workings of institutions and society, human nature, and much more. We wish to learn all we can about whatever we desire, and we hope to gain 
+                the privilege{" "}
+                <span className="font-medium">to speak with beautiful people with beautiful minds. </span>.
             </p>
 
             <p className="mb-3">
-                <span className="italic">In at libero sed nunc venenatis imperdiet sed ornare turpis.</span>, 
-                Donec vitae dui eget tellus gravida venenatis. {" "}
-                <span className="font-medium"> Integer fringilla congue eros non fermentum. </span>. Sed dapibus pulvinar{" "}
-                <span className="font-medium">pulvinar nibh tempor</span>. porta.
+                <span className="italic">The unfortunate reality of the modern world is constant distractions that are provided to us, </span>, 
+                which prevent us from doing what we do best: think. We are in a world-wide war for attention. {" "}
+                <span className="font-medium"> We are constantly distracted with new experiences, new worries, new fears, and things that occupy our mindscape. </span>
+                <span className="font-medium"> To contribute to a better world, humans must dim the noise around them and open their eyes to truth. Truth is not an answer. </span>
+                The pursuit of truth is a path that one embodies in their life to become a more compassionate and aware human. This pursuit provides knowledge, 
+                and subsequently, wisdom.<span className="italic">It is to realize that the significant actor in this world is you. </span>  You have the potential for great things. You can create change.
+                <span className="font-medium">  We hope to inspire others to think for themselves and to not be afraid to speak out in the world for something that they strongly believe in.</span> 
             </p>
         </motion.section>
     );
 }
-
 
 export default About;
