@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dim Eye Show Website
+
+Welcome to the Dim Eye Show website! This project is built using Next.js, Tailwind CSS, and Framer Motion, creating a sleek and modern single-page application (SPA) for showcasing the podcast.
+
+## Table of Contents
+
+- [Dim Eye Show Website](#dim-eye-show-website)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+    - [Adding Podcasts](#adding-podcasts)
+    - [Customizing Styles](#customizing-styles)
+    - [Creating Animations](#creating-animations)
+
+## Overview
+
+This project is a podcast SPA website designed to provide information about the Dim Eye Show. The website includes the following sections:
+
+- **Landing Section**: A visually appealing introduction with a gradient background.
+- **Podcasts Section**: A collection of podcasts with detailed information and linking to the YouTube video.
+- **About Section**: Information about the podcast creators and their mission.
+- **Contact Section**: A form for visitors to get in touch with the creators.
+
+## Features
+
+- **Responsive Design**: The website is fully responsive, ensuring a great user experience on both desktop and mobile devices.
+- **Smooth Animations**: Framer Motion is used to create smooth and interactive animations.
+- **Dynamic Content**: Next.js enables server-side rendering and dynamic content loading for better performance and SEO.
+- **Styled with Tailwind CSS**: Tailwind CSS provides utility-first CSS classes for rapid UI development.
+
+## Technologies Used
+
+- **Next.js**: A React framework for building server-side rendered and statically generated web applications.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Framer Motion**: A library for creating animations in React.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (version 14.x or higher)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/BrianBeilby/Purneet-Website.git
+    cd purneet-website
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Install the dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-## Learn More
+3. Run the development server:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open your browser and navigate to `http://localhost:3000` to see the website in action.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Adding Podcasts
 
-## Deploy on Vercel
+To add new podcasts, update the content in the appropriate data files. Ensure the data includes relevant information such as podcast title, description, and URL.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Customizing Styles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Tailwind CSS makes it easy to customize styles. Modify the `tailwind.config.js` file and use utility classes directly in your components to achieve the desired look and feel.
+
+### Creating Animations
+
+Utilize Framer Motion to add or customize animations. Refer to the Framer Motion documentation for examples and usage guidelines.
