@@ -16,6 +16,7 @@ Welcome to the Dim Eye Show website! This project is built using Next.js, Tailwi
     - [Adding Podcasts](#adding-podcasts)
     - [Customizing Styles](#customizing-styles)
     - [Creating Animations](#creating-animations)
+  -[About Dim Eye](#about)
 
 ## Overview
 
@@ -83,3 +84,8 @@ Tailwind CSS makes it easy to customize styles. Modify the `tailwind.config.js` 
 ### Creating Animations
 
 Utilize Framer Motion to add or customize animations. Refer to the Framer Motion documentation for examples and usage guidelines.
+
+
+## About 
+
+Welcome to the Dim Eye Show, a platform created by curious people for curious people. We dedicate ourselves to the expansion of knowledge, wisdom, and truth for ourselves and others. Our plan is to provide a range of content, from podcasts with experts to quick street interviews, to videos of us just talking. We enjoy thinking and discussing topics such as science & innovation, religion, history, spirituality, belief, the inner workings of institutions and society, human nature, and much more. We wish to learn all we can about whatever we desire, and we hope to gain the privilege to speak with beautiful people with beautiful minds.
