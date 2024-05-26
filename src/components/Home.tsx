@@ -81,8 +81,6 @@ function Front_Home() {
           src="https://open.spotify.com/embed/episode/1HA82v3w8mWI79Imajzrdm/video?utm_source=generator"
           width="496"
           height="279"
-          frameBorder="0"
-          allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
