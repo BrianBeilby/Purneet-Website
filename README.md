@@ -16,7 +16,7 @@ Welcome to the Dim Eye Show website! This project is built using Next.js, Tailwi
     - [Adding Podcasts](#adding-podcasts)
     - [Customizing Styles](#customizing-styles)
     - [Creating Animations](#creating-animations)
-  -[About Dim Eye](#about)
+  - [About Dim Eye](#about)
 
 ## Overview
 
