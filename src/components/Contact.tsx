@@ -44,7 +44,7 @@ export default function Contact() {
           once: true,
         }}
       >
-        <h2 className="text-3xl font-medium capitalize mb-8 text-center">Contact me</h2>
+        <h2 className="text-3xl font-medium capitalize mb-8 text-center text-orange-500">Contact me</h2>
 
         <p className="mb-3">
         Before each podcast episode airs,we invite viewers on platforms like Instagram to participate in our "Viewer Questions" segment.{" "}
