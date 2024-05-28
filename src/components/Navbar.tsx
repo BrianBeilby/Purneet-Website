@@ -68,8 +68,8 @@ const Navbar: React.FC = () => {
             <Image
               src={Logo}
               alt="Podcast Logo"
-              width="192"
-              height="192"
+              width="193"
+              height="193"
               quality="95"
               priority={true}
               className="h-20 w-20 rounded-full object-cover border-[0.15rem] border-orange-700 shadow-xl hover:scale-110 active:scale-105 transition cursor-pointer" 
