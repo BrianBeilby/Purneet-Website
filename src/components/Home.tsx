@@ -73,7 +73,7 @@ function Front_Home() {
             target="_blank"
             className="text-5xl text-purple-500 hover:text-purple-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
-            <FaTiktok />
+            <FaTwitch />
           </a>
         </div>
         <iframe
