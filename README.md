@@ -1,4 +1,4 @@
-# Dim Eye Show Website
+# Dim Eye Show Websit
 
 Welcome to the Dim Eye Show website! This project is built using Next.js, Tailwind CSS, and Framer Motion, creating a sleek and modern single-page application (SPA) for showcasing the podcast.
 
