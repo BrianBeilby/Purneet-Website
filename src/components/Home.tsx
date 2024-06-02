@@ -14,7 +14,11 @@ function Front_Home() {
   const { ref } = useSectionInView("Home", 0.5);
 
   return (
-    <BackgroundGradientAnimation className="min-h-screen">
+    <BackgroundGradientAnimation
+      gradientBackgroundStart="rgb(255, 149, 0)"
+      gradientBackgroundEnd="rgb(201, 131, 33)"
+      size="90%"
+    >
       <motion.div
         ref={ref}
         initial={{ opacity: 0.0, y: 40 }}
