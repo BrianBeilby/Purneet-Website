@@ -8,17 +8,15 @@ import {
   FaInstagram,
   FaTwitch,
 } from "react-icons/fa";
+import { BackgroundGradientAnimation } from "./GradientAnimationBackground";
 
 function Front_Home() {
   const { ref } = useSectionInView("Home", 0.5);
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="min-h-screen bg-gradient-to-r from-orange-400 to-orange-500 flex items-center justify-center"
-    >
+    <BackgroundGradientAnimation className="min-h-screen">
       <motion.div
+        ref={ref}
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -26,7 +24,7 @@ function Front_Home() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+        className="relative flex flex-col gap-4 items-center justify-center px-4 mt-24 z-50"
       >
         <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
           Dim Eye Show
@@ -85,7 +83,7 @@ function Front_Home() {
           loading="lazy"
         ></iframe>
       </motion.div>
-    </section>
+    </BackgroundGradientAnimation>
   );
 }
 
