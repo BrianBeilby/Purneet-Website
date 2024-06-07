@@ -37,7 +37,7 @@ function Front_Home() {
         }}
         className="absolute flex inset-0 flex-col gap-4 items-center justify-center text-center px-4 mt-24 z-50"
       >
-        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+        <div className="text-3xl md:text-7xl font-bold text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
           Dim Eye Show
         </div>
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
