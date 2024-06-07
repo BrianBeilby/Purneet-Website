@@ -15,8 +15,14 @@ function Front_Home() {
 
   return (
     <BackgroundGradientAnimation
-      gradientBackgroundStart="rgb(255, 149, 0)"
-      gradientBackgroundEnd="rgb(201, 131, 33)"
+      gradientBackgroundStart = "rgb(255, 102, 0)" // A shade of orange
+      gradientBackgroundEnd = "rgb(255, 165, 0)" // Another shade of orange
+      firstColor = "255, 140, 0" // Dark orange
+      secondColor = "255, 200, 0" // Light orange
+      thirdColor = "255, 110, 0" // Another shade of orange
+      fourthColor = "255, 69, 0" // Red-orange
+      fifthColor = "255, 99, 71" // Light red-orange
+      pointerColor = "255, 160, 122" // Light salmon
       size="80%"
       interactive={false}
     >
