@@ -17,7 +17,8 @@ function Front_Home() {
     <BackgroundGradientAnimation
       gradientBackgroundStart="rgb(255, 149, 0)"
       gradientBackgroundEnd="rgb(201, 131, 33)"
-      size="90%"
+      size="80%"
+      interactive={false}
     >
       <motion.div
         ref={ref}
@@ -28,7 +29,7 @@ function Front_Home() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4 mt-24 z-50"
+        className="absolute flex inset-0 flex-col gap-4 items-center justify-center text-center px-4 mt-24 z-50"
       >
         <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
           Dim Eye Show
