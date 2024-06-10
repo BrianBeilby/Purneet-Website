@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
                     {link.name}
                     {link.name === activeSection && (
                       <motion.span
-                        className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-orange-400"
+                        className="rounded-full absolute inset-0 -z-10 bg-orange-400"
                         layoutId="activeSection"
                         transition={{
                           type: "spring",
