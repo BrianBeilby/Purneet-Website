@@ -37,18 +37,18 @@ function Front_Home() {
         }}
         className="absolute flex inset-0 flex-col gap-4 items-center justify-center text-center px-4 mt-24 z-50"
       >
-        <div className="text-3xl md:text-7xl font-bold text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
+        <div className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
           Dim Eye Show
         </div>
-        <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
+        <div className="font-extralight text-xl md:text-4xl dark:text-neutral-200 py-4">
           Please stop what you&apos;re doing right now and watch this podcast!
         </div>
-        <div className="flex space-x-8">
+        <div className="flex flex-wrap space-x-4 md:space-x-8 justify-center">
           <a
             title="Spotify"
             href="https://open.spotify.com/show/1sW6Gok1Dj4gpkO5S3ozI5"
             target="_blank"
-            className="text-5xl text-spotify-green hover:text-green-700 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+            className="text-4xl md:text-5xl text-spotify-green hover:text-green-700 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
             <FaSpotify />
           </a>
@@ -56,7 +56,7 @@ function Front_Home() {
             title="Youtube"
             href="https://www.youtube.com/channel/UCJfTG1THOabQ6OXQgzV2hdg"
             target="_blank"
-            className="text-5xl text-youtube-red hover:text-red-800 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+            className="text-4xl md:text-5xl text-youtube-red hover:text-red-800 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
             <FaYoutube />
           </a>
@@ -64,7 +64,7 @@ function Front_Home() {
             title="Tiktok"
             href="https://www.tiktok.com/@dimeyeshow?lang=en"
             target="_blank"
-            className="text-5xl text-grey-100 hover:text-grey-200 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+            className="text-4xl md:text-5xl text-grey-100 hover:text-grey-200 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
             <FaTiktok />
           </a>
@@ -72,7 +72,7 @@ function Front_Home() {
             title="Instagram"
             href="https://www.instagram.com/dimeyeshow/"
             target="_blank"
-            className="text-5xl text-pink-500 hover:text-pink-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+            className="text-4xl md:text-5xl text-pink-500 hover:text-pink-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
             <FaInstagram />
           </a>
@@ -80,13 +80,13 @@ function Front_Home() {
             title="Twitch"
             href="https://www.twitch.tv/dimeyeshow"
             target="_blank"
-            className="text-5xl text-purple-500 hover:text-purple-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+            className="text-4xl md:text-5xl text-purple-500 hover:text-purple-600 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
             <FaTwitch />
           </a>
         </div>
         <iframe
-          className="rounded-xl mt-20"
+          className="rounded-xl mt-10 md:mt-20 w-full md:w-3/4 lg:w-1/2 h-48 md:h-72"
           src="https://open.spotify.com/embed/episode/1HA82v3w8mWI79Imajzrdm/video?utm_source=generator"
           width="700"
           height="330"
