@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
             "sm:flex sm:bg-white sm:px-4 sm:py-1 sm:bg-opacity-50 sm:shadow-lg sm:shadow-black/[0.03] sm:backdrop-blur-[0.5rem] sm:rounded-full transition-all duration-300",
             {
               hidden: !menuOpen,
-              "flex flex-col items-center justify-center fixed top-[6rem] left-4 right-4 w-auto z-50 bg-orange-200 bg-opacity-100 rounded-3xl p-4": menuOpen,
+              "flex flex-col items-center justify-center fixed top-[7rem] left-4 right-4 w-auto z-50 bg-orange-200 bg-opacity-100 rounded-3xl p-4": menuOpen,
             }
           )}
           initial="hidden"
