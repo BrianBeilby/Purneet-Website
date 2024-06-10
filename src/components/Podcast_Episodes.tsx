@@ -39,7 +39,7 @@ function PodcastEpisodes() {
                   <h3 className="text-xl font-bold text-orange-400 group-hover:text-black">
                     {episode.title}
                   </h3>
-                  <p>{episode.description}</p>
+                  <p className="text-white">{episode.description}</p>
                 </div>
               </a>
             ))}
