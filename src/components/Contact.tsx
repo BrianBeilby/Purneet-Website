@@ -30,7 +30,7 @@ export default function Contact() {
       <motion.section
         id="contact"
         ref={ref}
-        className="mb-20 sm:mb-32 w-[min(100%,38rem)] text-center scroll-mt-28 flex flex-col justify-center items-center mx-auto"
+        className="mb-20 sm:mb-32 w-[min(100%,38rem)] text-center scroll-mt-28 flex flex-col justify-center items-center mx-auto px-4"
         initial={{
           opacity: 0,
         }}
@@ -44,15 +44,15 @@ export default function Contact() {
           once: true,
         }}
       >
-        <h2 className="text-3xl font-medium capitalize mb-8 text-center text-orange-500">Contact me</h2>
+        <h2 className="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 text-center text-orange-500">Contact me</h2>
 
-        <p className="mb-3">
+        <p className="mb-3 px-2 sm:px-0">
         Before each podcast episode airs,we invite viewers on platforms like Instagram to participate in our &quot;Viewer Questions&quot; segment.{" "}
                 <span className="font-medium"> We&apos;ve received fantastic questions for our first podcast, </span>, 
                 and we look forward to continuing to engage with your brilliant minds and contributions in our future discussions.{" "}
             </p>
 
-        <p className="text-gray-700 mt-6 dark:text-white/80" style={{ textAlign: "center" }}>
+        <p className="text-gray-700 mt-6 dark:text-white/80 text-center px-2 sm:px-0">
           Please contact me directly at{" "}
           <a className="text-orange-500 font-bold underline" href="mailto:dimeyeshow@gmail.com">
             dimeyeshow@gmail.com
@@ -82,14 +82,14 @@ export default function Contact() {
             toast.success("Email sent successfully!");
           } }>
           <input
-            className="h-14 px-4 rounded-lg border-2 border-orange-400 bg-white bg-opacity-80 focus:bg-opacity-100 hover:bg-white focus:border-4 focus:border-orange-400 transition-all"
+            className="h-12 sm:h-14 px-4 rounded-lg border-2 border-orange-400 bg-white bg-opacity-80 focus:bg-opacity-100 hover:bg-white focus:border-4 focus:border-orange-400 transition-all"
             name="senderEmail"
             type="email"
             required
             maxLength={500}
             placeholder="Your email" />
           <textarea
-            className="h-52 my-3 rounded-lg border-2 border-orange-400 p-4 bg-white bg-opacity-80 focus:bg-opacity-100 hover:bg-white focus:border-4 focus:border-orange-400 transition-all"
+            className="h-36 sm:h-52 my-3 rounded-lg border-2 border-orange-400 p-4 bg-white bg-opacity-80 focus:bg-opacity-100 hover:bg-white focus:border-4 focus:border-orange-400 transition-all"
             name="message"
             placeholder="Your message"
             required
