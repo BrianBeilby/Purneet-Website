@@ -9,7 +9,7 @@ function About() {
     <motion.section
       ref={ref}
       id="about"
-      className="mt-10 mx-4 sm:mt-28 sm:mx-auto max-w-[45rem] text-center leading-8 text-white text-lg sm:text-xl sm:mb-40 scroll-mt-5 min-h-screen flex flex-col justify-center items-center"
+      className="mt-10 mx-4 sm:mt-28 sm:mx-auto max-w-[45rem] text-center bg-black leading-8 text-white text-lg sm:text-xl sm:mb-40 scroll-mt-5 min-h-screen flex flex-col justify-center items-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
