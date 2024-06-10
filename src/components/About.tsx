@@ -9,15 +9,15 @@ function About() {
     <motion.section
       ref={ref}
       id="about"
-      className="mt-28 mx-auto max-w-[45rem] text-center leading-8 text-white text-xl sm:mb-40 scroll-mt-5 min-h-screen flex flex-col justify-center items-center"
+      className="mt-10 mx-4 sm:mt-28 sm:mx-auto max-w-[45rem] text-center leading-8 text-white text-lg sm:text-xl sm:mb-40 scroll-mt-5 min-h-screen flex flex-col justify-center items-center"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
-      <h2 className="text-3xl font-medium capitalize mb-8 mt-3 text-orange-500">
+      <h2 className="text-2xl sm:text-3xl font-medium capitalize mb-4 sm:mb-8 mt-3 text-orange-500">
         About me
       </h2>
-      <p className="mb-6">
+      <p className="mb-6 px-2 sm:px-0">
         Welcome to the{" "}
         <span className="font-bold text-orange-700">Dim Eye Show</span>, a
         platform created by curious people for curious people. We dedicate
@@ -37,7 +37,7 @@ function About() {
         beautiful minds.
       </p>
 
-      <p className="mb-3 mt-6">
+      <p className="mb-3 mt-6 px-2 sm:px-0">
         The unfortunate reality of the modern world is constant distractions
         that are provided to us, which prevent us from doing what we do best:{" "}
         <span className="font-bold text-orange-700">think</span>. We are in a
