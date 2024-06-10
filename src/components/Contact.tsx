@@ -52,7 +52,7 @@ export default function Contact() {
                 and we look forward to continuing to engage with your brilliant minds and contributions in our future discussions.{" "}
             </p>
 
-        <p className="text-gray-700 mt-6 dark:text-white/80 text-center px-2 sm:px-0">
+        <p className="mt-6 text-white/80 text-center px-2 sm:px-0">
           Please contact me directly at{" "}
           <a className="text-orange-500 font-bold underline" href="mailto:dimeyeshow@gmail.com">
             dimeyeshow@gmail.com
@@ -70,7 +70,7 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        <form className="mt-10 flex flex-col dark:text-black w-full max-w-lg"
+        <form className="mt-10 flex flex-col text-black w-full max-w-lg"
           action={async (formData) => {
             const { data, error } = await sendEmail(formData);
 
