@@ -40,7 +40,7 @@ function Front_Home() {
         <div className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
           Dim Eye Show
         </div>
-        <div className="font-extralight text-xl md:text-4xl dark:text-neutral-200 py-4">
+        <div className="font-extralight text-xl md:text-4xl text-neutral-200 py-4">
           Please stop what you&apos;re doing right now and watch this podcast!
         </div>
         <div className="flex flex-wrap space-x-4 md:space-x-8 justify-center">
@@ -64,7 +64,7 @@ function Front_Home() {
             title="Tiktok"
             href="https://www.tiktok.com/@dimeyeshow?lang=en"
             target="_blank"
-            className="text-4xl md:text-5xl text-grey-100 hover:text-grey-200 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
+            className="text-4xl md:text-5xl text-gray-200 hover:text-gray-300 focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
           >
             <FaTiktok />
           </a>
