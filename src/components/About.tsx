@@ -15,46 +15,46 @@ function About() {
       transition={{ delay: 0.175 }}
     >
       <h2 className="text-2xl sm:text-3xl font-medium capitalize mb-4 sm:mb-8 mt-3 text-orange-500">
-        About me
+        Mission Statement
       </h2>
       <p className="mb-6 px-2 sm:px-0">
         Welcome to the{" "}
-        <span className="font-bold text-orange-700">Dim Eye Show</span>, a
-        platform created by curious people for curious people. We dedicate
-        ourselves to the{" "}
+        <span className="font-bold text-orange-700">Dim Eye Show</span>
+        . This platform is an open space for conversation and engagement 
+        about topics that are often overlooked{" "}
         <span className="font-bold text-orange-700">
-          expansion of knowledge, wisdom, and truth
+        as well as a platform to explore interesting topics and subjects.
         </span>{" "}
-        for ourselves and others. Our plan is to provide a range of content,
-        from podcasts with experts to quick street interviews, to videos of us
-        just talking. We enjoy thinking and discussing topics such as{" "}
+        Common themes in our content are: society and societal impacts, technology 
+        & innovation, spirituality/religion/philosophy, and business.{" "}
         <span className="font-bold text-orange-700">
-          science & innovation, religion, history, spirituality, belief, the
-          inner workings of institutions and society, human nature
+        Engagement with experts in their fields, 
         </span>
-        , and much more. We wish to learn all we can about whatever we desire,
-        and we hope to gain the privilege to speak with beautiful people with
-        beautiful minds.
+        including business owners and educators help us have thoughtful and 
+        thought-provoking conversations with interesting questions and even 
+        better answers. 
       </p>
 
       <p className="mb-3 mt-6 px-2 sm:px-0">
-        The unfortunate reality of the modern world is constant distractions
-        that are provided to us, which prevent us from doing what we do best:{" "}
-        <span className="font-bold text-orange-700">think</span>. We are in a
-        world-wide war for attention. We are constantly distracted with new
-        experiences, new worries, new fears, and new things that occupy our
-        mindscape. To contribute to a better world, humans must{" "}
+      <span className="mb-6 px-2 text-orange-700 sfont-bold sm:px-0">
+      This podcast style of the show goes deep,</span>
+      but we also aim to go wide. 
+      Content such as street interviews, quick question videos, or random thought 
+      videos help us in gaining and sharing more {" "}
+        <span className="font-bold text-orange-700">insight on the human experience and 
+        the variability that results from it.</span>
+        Many things in today’s world contribute to making us feel isolated in our struggles and problems, 
+        but that doesn't mean it's true. Many of these struggles and common questions are homogenous to the 
+        human species and have been for thousands of years. {" "}
+        <br/>
         <span className="font-bold text-orange-700">
-          dim the noise around them and open their eyes to truth
+        Simply put, they are what it means to be human.{" "}
         </span>
-        . Truth is not an answer. The pursuit of truth is a path that one
-        embodies in their life to become a more compassionate and aware human.
-        This pursuit provides knowledge, and subsequently, wisdom. It is to
-        realize that the significant actor in this world is{" "}
-        <span className="font-bold text-orange-700">you</span>. You have the
-        potential for great things. You can create change. We hope to inspire
-        others to think for themselves and to not be afraid to speak out in the
-        world for something that they strongly believe in.
+        Societal distractions prevent us from asking and answering these internal questions 
+        we may have.{" "}
+        <span className="font-bold text-orange-700">Our goal is to dim the noise around us {" "}</span> 
+        and aim towards truth in order to live more 
+        fulfilling lives with purpose and love. 
       </p>
     </motion.section>
   );

@@ -41,7 +41,6 @@ function Front_Home() {
           Dim Eye Show
         </div>
         <div className="font-extralight text-xl md:text-4xl text-neutral-200 py-4">
-          Please stop what you&apos;re doing right now and watch this podcast!
         </div>
         <div className="flex flex-wrap space-x-4 md:space-x-8 justify-center">
           <a
