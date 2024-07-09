@@ -37,14 +37,14 @@ function About() {
 
       <p className="mb-3 mt-6 px-2 sm:px-0">
       <span className="mb-6 px-2 text-orange-700 sfont-bold sm:px-0">
-      This podcast style of the show goes deep,</span>
-      but we also aim to go wide. 
-      Content such as street interviews, quick question videos, or random thought 
-      videos help us in gaining and sharing more {" "}
+        This podcast style of the show goes deep,</span>
+        but we also aim to go wide. 
+        Content such as street interviews, quick question videos, or random thought 
+        videos help us in gaining and sharing more {" "}
         <span className="font-bold text-orange-700">insight on the human experience and 
         the variability that results from it.</span>
-        Many things in today’s world contribute to making us feel isolated in our struggles and problems, 
-        but that doesn't mean it's true. Many of these struggles and common questions are homogenous to the 
+        Many things in today&apos;s world contribute to making us feel isolated in our struggles and problems, 
+        but that doesn&apos;t mean it&apos;s true. Many of these struggles and common questions are homogenous to the 
         human species and have been for thousands of years. {" "}
         <br/>
         <span className="font-bold text-orange-700">
