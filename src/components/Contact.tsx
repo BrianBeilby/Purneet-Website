@@ -47,8 +47,8 @@ export default function Contact() {
         <h2 className="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 text-center text-orange-500">Contact me</h2>
 
         <p className="mb-3 px-2 sm:px-0">
-        Before each podcast episode airs,we invite viewers on platforms like Instagram to participate in our &quot;Viewer Questions&quot; segment.{" "}
-                <span className="font-medium"> We&apos;ve received fantastic questions for our first podcast, </span>, 
+        Before each podcast episode airs, we invite viewers on platforms like Instagram to participate in our &quot;Viewer Questions&quot; segment.{" "}
+                <span className="font-medium"> We&apos;ve received fantastic questions for our first podcast, </span>
                 and we look forward to continuing to engage with your brilliant minds and contributions in our future discussions.{" "}
             </p>
 
