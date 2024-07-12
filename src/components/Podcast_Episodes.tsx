@@ -21,6 +21,14 @@ function PodcastEpisodes() {
         <h3 className="text-lg mt-2 mb-8 text-black">
           And many more to come... Stay tuned!
         </h3>
+        <iframe
+          className="rounded-xl mt-10 mb-6 md:mt-20 w-full md:w-3/4 lg:w-1/2 h-48 md:h-72"
+          src="https://open.spotify.com/embed/episode/1HA82v3w8mWI79Imajzrdm/video?utm_source=generator"
+          width="700"
+          height="330"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
         {episodes.length === 0 ? (
           <p className="text-orange-800 text-lg">
             Episodes coming soon... Stay tuned! 😎

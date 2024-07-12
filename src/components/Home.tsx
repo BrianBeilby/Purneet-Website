@@ -37,8 +37,8 @@ function Front_Home() {
         }}
         className="absolute flex inset-0 flex-col gap-4 items-center justify-center text-center px-4 mt-24 z-50"
       >
-        <div className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
-          Dim Eye Show
+        <div className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 leading-relaxed pb-2">
+        Dim Eye Show
         </div>
         <div className="font-extralight text-xl md:text-4xl text-neutral-200 py-4">
         </div>
@@ -84,14 +84,7 @@ function Front_Home() {
             <FaTwitch />
           </a>
         </div>
-        <iframe
-          className="rounded-xl mt-10 md:mt-20 w-full md:w-3/4 lg:w-1/2 h-48 md:h-72"
-          src="https://open.spotify.com/embed/episode/1HA82v3w8mWI79Imajzrdm/video?utm_source=generator"
-          width="700"
-          height="330"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
+       
       </motion.div>
     </BackgroundGradientAnimation>
   );
