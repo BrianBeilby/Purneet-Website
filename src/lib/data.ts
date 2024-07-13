@@ -26,7 +26,10 @@ export const links = [ //Links for the navbar
   
   export const episodes: Episode[] = [
     { id: 1, title: 'Episode 1 Derek Lam', description: 'The First Episode starring Derek Lam, a professor at California State University, Sacramento.', link: 'https://www.youtube.com/watch?v=qhhSx8RoAiQ'},
+    { id: 2, title: 'Episode 2 Natasha Palumbo ', description: 'The Second Episode  episode featuring Professor P, aka Natasha Palumbo. She is a very impressive individual ', link: 'https://www.youtube.com/watch?v=wFOQvJivhgE'},
   ];
+
+
 
   /*
     { id: 143, title: 'Episode 143', description: 'WordPress vs Wix & the Fight Against Fake News' },
