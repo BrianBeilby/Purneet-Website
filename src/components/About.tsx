@@ -35,7 +35,7 @@ function About() {
       </p>
 
       <p className="mb-3 mt-6 px-2 sm:px-0 text-center">
-      Many things in today’s world contribute to making us feel isolated in our struggles and problems, but it doesn&apos;t have to be that way.
+      Many things in today&apos;s world contribute to making us feel isolated in our struggles and problems, but it doesn&apos;t have to be that way.
       </p>
     </motion.section>
   );

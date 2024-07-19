@@ -26,11 +26,11 @@ export default function Contact() {
   return (
     <>
       <Toaster position="top-center" reverseOrder={false} />
-      
+      <div className="h-1 bg-orange-500 w-full my-4 block sm:hidden"></div>
       <motion.section
         id="contact"
         ref={ref}
-        className="mb-20 sm:mb-32 w-[min(100%,38rem)] text-center scroll-mt-28 flex flex-col justify-center items-center mx-auto px-4"
+        className="mt-20 mb-20 sm:mb-32 w-[min(100%,38rem)] text-center scroll-mt-28 flex flex-col justify-center items-center mx-auto px-4"
         initial={{
           opacity: 0,
         }}
@@ -44,6 +44,8 @@ export default function Contact() {
           once: true,
         }}
       >
+        
+
         <h2 className="text-2xl sm:text-3xl font-medium capitalize mb-6 sm:mb-8 text-center text-orange-500">Contact me</h2>
 
         <p className="mb-3 px-2 sm:px-0">
