@@ -24,3 +24,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.menu-container {
+  transform: none !important; /* Override transform */
+  /* Ensure that transform is reset for the element */
+}

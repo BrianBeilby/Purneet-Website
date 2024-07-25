@@ -14,8 +14,6 @@ import {
 import { SiItunes } from "react-icons/si";
 import { PiApplePodcastsLogoLight } from "react-icons/pi";
 import Navbar from "@/components/Navbar";
-import { AuroraBackground } from "@/components/AuroraBackground";
-import { motion } from "framer-motion";
 import Front_Home from "@/components/Home";
 import Podcast_Episodes from "@/components/Podcast_Episodes";
 import About from "@/components/About";

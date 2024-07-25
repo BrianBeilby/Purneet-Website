@@ -7,6 +7,8 @@ import clsx from "clsx";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../public/Final_Logo.png";
 import Image from "next/image";
+import '../app/globals.css';
+
 
 interface Link {
   name: string;
@@ -81,7 +83,7 @@ const Navbar: React.FC = () => {
     <header className="z-[999] relative">
       <nav
         className={clsx(
-          "fixed left-0 right-56 w-full max-w-[90rem] px-4 flex items-center justify-between py-2 mx-auto transition-all duration-300",
+          "fixed left-0 right-0 w-full max-w-[90rem] px-4 flex items-center justify-between py-2 mx-auto transition-all duration-300",
           {
             "top-3": scrolling,
             "top-[0.15rem] sm:top-[1.7rem]": !scrolling,
@@ -131,10 +133,10 @@ const Navbar: React.FC = () => {
 
         <motion.div
           className={clsx(
-            "sm:flex sm:bg-white sm:px-4 sm:py-1 sm:bg-opacity-50 sm:shadow-lg sm:shadow-black/[0.03] sm:backdrop-blur-[0.5rem] sm:rounded-full transition-all duration-300",
+            "menu-container sm:flex sm:bg-white sm:px-4 sm:py-1 sm:bg-opacity-50 sm:shadow-lg sm:shadow-black/[0.03] sm:backdrop-blur-[0.5rem] sm:rounded-full transition-all duration-300",
             {
               hidden: !menuOpen,
-              "flex flex-col items-center justify-center fixed top-[7rem] left-4 right-4 w-auto z-50 bg-orange-200 bg-opacity-100 rounded-3xl p-4": menuOpen,
+              "flex flex-col items-center justify-center fixed top-[7rem] left-4 right-4 w-auto z-50 bg-orange-200 bg-opacity-100 rounded-3xl p-4 sm:p-0 sm:left-auto sm:right-auto": menuOpen,
             }
           )}
           initial="hidden"
@@ -193,3 +195,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
