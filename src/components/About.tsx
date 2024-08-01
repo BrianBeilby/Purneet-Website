@@ -17,15 +17,7 @@ function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
-      <Image
-          src={Logo}
-          alt="Podcast Logo"
-          width="192"
-          height="192"
-          quality="95"
-          priority={true}
-          className="hidden h-32 w-32 rounded-full object-cover  shadow-xl hover:scale-110 active:scale-105 transition cursor-pointer"
-        />
+    
       <h2 className="text-3xl sm:text-3xl font-medium capitalize mb-10 sm:mb-8 mt-3 text-orange-500">
         Mission Statement
       </h2>
