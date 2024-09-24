@@ -22,24 +22,23 @@ function About() {
         Mission Statement
       </h2>
       <p className="mb-6 px-2 sm:px-0 ">
-      Welcome to the Dim Eye Show. This platform is an open space for conversation and engagement about 
-      topics that are often overlooked as well as a platform to explore interesting topics and subjects. 
-      Common themes in our content are: society and societal impacts, technology & innovation, spirituality/religion/philosophy, 
-      and business. Engagement with experts in their fields, including business owners and educators help us have thoughtful and 
-      thought-provoking conversations with interesting questions and even better answers. This podcast style of the show goes deep, 
-      but we also aim to go wide. Content such as street interviews, quick question videos, or random thought videos help us in gaining 
-      and sharing more insight on the human experience and the variability that results from it. 
+        Welcome to the Dim Eye Show.
+        This is a platform for exploration. For adventurers, for learners and wisdom-seekers, and for lovers. We share your passion and love for life and all it has to offer us. 
+        We share your concern for humanity and society. We share your desire to live a rich, intentional life. 
       </p>
 
       <p className="mb-3 mt-6 px-2 sm:px-0 text-center">
-      Many things in today’s world contribute to making us feel isolated in our struggles and problems, 
-      but that doesn&apos;t mean it&apos;s true. Many of these struggles and common questions are homogenous to the 
-      human species and have been for thousands of years. Simply put, they are what it means to be human. 
-      Societal influences distract us from asking and answering these internal questions we have.
+        We hope to give you interesting  thoughts to ponder on, new ideas to branch off of, and to kickstart new emotions to realize.
       </p>
 
       <p className="mb-3 mt-6 px-2 sm:px-0 text-center">
-      Many things in today&apos;s world contribute to making us feel isolated in our struggles and problems, but it doesn&apos;t have to be that way.
+        It feels as if the 21st century is the century of isolation. People feel isolated in their struggles and problems, but we are here to say that isn&apos;t 
+        true! Many of these struggles and questions we all have are homogenous to the human species. They have been for thousands of years, yet the difference now 
+        is that we are confused on who and what to believe, even ourselves. Societal influences distract us from asking and answering these internal questions we have.       
+      </p>
+
+      <p className="mb-3 mt-6 px-2 sm:px-0 text-center">
+        &quot;Waking up to who you are, requires letting go of who you imagine yourself to be&quot; - Alan Watts
       </p>
     </motion.section>
   );
